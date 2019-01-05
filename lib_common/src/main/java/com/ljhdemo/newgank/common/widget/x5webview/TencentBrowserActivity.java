@@ -294,7 +294,7 @@ public class TencentBrowserActivity extends BaseActivity {
             // 将文本内容放到系统剪贴板里。
             ClipData clipData = ClipData.newPlainText("text", url);
             cm.setPrimaryClip(clipData);
-            ToastUtils.showToast(getString(R.string.lib_common_copy_success));
+            ToastUtils.showMessage(getString(R.string.lib_common_copy_success));
 
         } else if (i == R.id.action_open) {
             Intent intent = new Intent();

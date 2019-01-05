@@ -1,7 +1,7 @@
 package com.ljh.newgank_kotlin.app
 
+import com.ljh.newgank_kotlin.http.MainTokenInterceptor
 import com.ljhdemo.newgank.common.base.BaseApplication
-import com.ljhdemo.newgank.common.http.TokenInterceptor
 import okhttp3.OkHttpClient
 
 class MyApplication : BaseApplication() {
@@ -12,7 +12,7 @@ class MyApplication : BaseApplication() {
 
     override fun getOkClient(): OkHttpClient.Builder {
         var client = OkHttpClient.Builder()
-        client.addInterceptor(TokenInterceptor())
+        client.addInterceptor(MainTokenInterceptor())
         return client
     }
 }
