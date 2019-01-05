@@ -1,12 +1,12 @@
 ext {
     android = [
-            applicationId    : "com.orangeemotion.app",
+            applicationId    : "com.ljh.newgank_kotlin",
             //applicationId    : "com.xyemotioncvs.app",
-            compileSdkVersion: 27,
+            compileSdkVersion: 28,
             minSdkVersion    : 19,
-            targetSdkVersion : 27,
+            targetSdkVersion : 28,
             versionCode      : 19010301,
-            versionName      : "1.3.0"
+            versionName      : "1.0.0"
     ]
     storePassword = "xyemotion"
     keyAlias = "xyemotion"

@@ -1,13 +1,6 @@
-package com.ljhdemo.newgank.common.utils;
+package com.ljhdemo.newgank.common.http;
 
-import com.ljhdemo.newgank.common.http.BaseModel;
-import com.ljhdemo.newgank.common.http.MsgException;
-
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.ObservableSource;
-import io.reactivex.ObservableTransformer;
+import io.reactivex.*;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Function;

@@ -1,16 +1,11 @@
 package com.ljhdemo.newgank.common.http;
 
 
-import com.ljhdemo.newgank.common.utils.DateUtils;
+import com.ljhdemo.newgank.common.utils.CommonUtils;
 import com.ljhdemo.newgank.common.utils.LogUtil;
+import okhttp3.*;
 
 import java.io.IOException;
-
-import okhttp3.Interceptor;
-import okhttp3.MediaType;
-import okhttp3.Request;
-import okhttp3.Response;
-import okhttp3.ResponseBody;
 
 /**
  * OkHttp拦截器（判断是否登录过期，并重新登录）
@@ -31,7 +26,7 @@ public class TokenInterceptor implements Interceptor {
         String result = response.body().string();
 
         LogUtil.i("\nrequest url:" + request.url()
-                + "\ntime:" + DateUtils.getDate(System.currentTimeMillis())
+                + "\ntime:" + CommonUtils.getDate(System.currentTimeMillis())
                 + "\nconnection:" + chain.connection()
                 + "\nheaders:" + request.headers()
                 + "\n" + result);

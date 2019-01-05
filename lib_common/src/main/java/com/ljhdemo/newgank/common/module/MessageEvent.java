@@ -1,21 +1,18 @@
 package com.ljhdemo.newgank.common.module;
 
-/**
- * Created by hk_jacky on 2018/3/28.
- */
 
 public class MessageEvent <T>{
 
     private String message;
     private T data;
-    private int messageEventCode;
+    private int code;
 
-    public int getMessageEventCode() {
-        return messageEventCode;
+    public int getCode() {
+        return code;
     }
 
-    public void setMessageEventCode(int messageEventCode) {
-        this.messageEventCode = messageEventCode;
+    public void setCode(int code) {
+        this.code = code;
     }
 
     public void setData(T data) {
@@ -35,11 +32,11 @@ public class MessageEvent <T>{
     }
     public MessageEvent(String message,int messageEventCode) {
         this.message = message;
-        this.messageEventCode = messageEventCode;
+        this.code = messageEventCode;
     }
 
     public MessageEvent(int messageEventCode) {
-        this.messageEventCode = messageEventCode;
+        this.code = messageEventCode;
     }
 
     public MessageEvent(String message,T t){

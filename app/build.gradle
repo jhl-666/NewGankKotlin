@@ -9,7 +9,7 @@ def librarys = rootProject.ext.dependencies
 android {
     compileSdkVersion cfg.compileSdkVersion
     defaultConfig {
-        applicationId "com.ljh.newgank_kotlin"
+        applicationId cfg.applicationId
         minSdkVersion cfg.minSdkVersion
         targetSdkVersion cfg.targetSdkVersion
         versionCode cfg.versionCode

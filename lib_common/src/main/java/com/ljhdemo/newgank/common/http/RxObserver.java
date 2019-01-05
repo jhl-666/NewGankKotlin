@@ -1,4 +1,4 @@
-package com.ljhdemo.newgank.common.utils;
+package com.ljhdemo.newgank.common.http;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -7,6 +7,7 @@ import com.ljhdemo.newgank.common.R;
 import com.ljhdemo.newgank.common.base.BaseApplication;
 import com.ljhdemo.newgank.common.http.MsgException;
 
+import com.ljhdemo.newgank.common.utils.LoadingDialog;
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
