@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="LibCommonAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/libCommonColorPrimary</item>
+        <item name="colorPrimaryDark">@color/libCommonColorPrimaryDark</item>
+        <item name="colorAccent">@color/libCommonColorAccent</item>
+    </style>
+
+    <style name="LibCommonImageActivityTheme" parent="LibCommonAppTheme">
+        <item name="android:windowBackground">@color/libCommonTransparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="LibCommonToolBarPopupThemeDay" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/libCommonAppToolbarBg</item>
+        <item name="android:background">@color/libCommonColorTextWhite</item>
+    </style>
+
+    <style name="LibCommonToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionMenuTextColor">#fff</item>
+    </style>
+
+    <style name="LibCommonBottomDialog" parent="LibCommonAlertDialogStyle">
+        <item name="android:windowAnimationStyle">@style/LibCommonBottomInOutAnimation</item>
+    </style>
+
+    <style name="LibCommonBottomInOutAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/lib_common_bottom_in_300</item>
+        <item name="android:windowExitAnimation">@anim/lib_common_bottom_out_300</item>
+    </style>
+
+    <style name="LibCommonAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

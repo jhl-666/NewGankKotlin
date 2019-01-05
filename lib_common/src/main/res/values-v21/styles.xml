@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="LibCommonAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/libCommonColorPrimary</item>
+        <item name="colorPrimaryDark">@color/libCommonColorPrimaryDark</item>
+        <item name="colorAccent">@color/libCommonColorAccent</item>
+    </style>
+    <style name="LibCommonImageActivityTheme" parent="LibCommonAppTheme">
+        <item name="android:windowBackground">@color/libCommonTransparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

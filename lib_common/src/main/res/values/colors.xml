@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="libCommonColorPrimary">#000000</color>
+    <color name="libCommonColorPrimaryDark">#000000</color>
+    <color name="libCommonColorAccent">#FF4081</color>
+
+    <!--字体颜色-->
+    <color name="libCommonColorTextWhite">#ffffff</color>
+    <color name="libCommonColorTextBlack">#333333</color>
+    <color name="libCommonColorTextGray">#646464</color>
+    <color name="libCommonColorTextLightGray">#969696</color>
+    <color name="libCommonColorTextGreen">#28aa46</color>
+    <color name="libCommonColorTextRed">#ff3c05</color>
+
+    <!--background-->
+    <color name="libCommonWhite">#ffffff</color>
+
+    <color name="libCommonThemeColor">#f0f0f0</color>
+
+    <color name="libCommonBackground">#ebebeb</color>
+
+    <color name="libCommonStatusBar">#ffffff</color>
+    <color name="libCommonAppToolbarBg">#3c87b7</color>
+    <color name="libCommonTransparent">#00000000</color>
+    <color name="libCommonStatusBarBlack">#000000</color>
+    <color name="libCommonGrayLineColor">#ebebeb</color>
+    <color name="libCommonBackgroundColor">#f5f5f5</color>
+    <color name="libCommonNavigationViewTextColor">#f5f5f5</color>
+
+
+    <color name="libCommonColor_262626">#262626</color>
+    <color name="libCommonColor_999CA0">#999CA0</color> 
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="lib_common_copy_success">复制成功</string>
+    <string name="lib_common_error_network_or_server">网络或服务器异常</string>
+    <string name="lib_common_dialog_message_loading">加载中</string>
+</resources>
