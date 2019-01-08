@@ -46,10 +46,16 @@ public abstract class BaseFragment extends NaviFragment {
         if(view == null)
             view = inflater.inflate(provideLayoutId(savedInstanceState),container,false);
         unbinder = ButterKnife.bind(this, view);
-        initView();
-        initData();
         return view;
     }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {//防止kotlin在onCreateView中找不到控件ID
+        super.onViewCreated(view, savedInstanceState);
+        initView();
+        initData();
+    }
+
     protected  void initVariable(Bundle savedInstanceState){
 
     }
