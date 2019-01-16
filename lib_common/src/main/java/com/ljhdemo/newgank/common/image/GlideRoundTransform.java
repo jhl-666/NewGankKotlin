@@ -16,7 +16,7 @@ import java.security.MessageDigest;
 
 public class GlideRoundTransform extends BitmapTransformation {
 
-    private static float radius = 0f;
+    private  float radius = 0f;
 
     public GlideRoundTransform(Context context) {
         this(context, 4);
@@ -33,7 +33,7 @@ public class GlideRoundTransform extends BitmapTransformation {
         return roundCrop(pool, bitmap);
     }
 
-    private static Bitmap roundCrop(BitmapPool pool, Bitmap source) {
+    private Bitmap roundCrop(BitmapPool pool, Bitmap source) {
         if (source == null) return null;
 
         Bitmap result = pool.get(source.getWidth(), source.getHeight(), Bitmap.Config.ARGB_8888);
