@@ -35,11 +35,16 @@ public class RxSchedulerUtil {
                 return upstream.flatMap(new Function<BaseModel<T>, Observable<T>>() {
                     @Override
                     public Observable<T> apply(BaseModel<T> result) {
-                        if (result.getCode() == 200) {//检查是否掉接口成功了
-                            T data = result.getData();
-                            return createData(data);//成功，剥取我们要的数据，把BaseModel丢掉
-                        } else {
-                            return Observable.error(new MsgException(result.getMessage()));//出错就返回服务器错误
+                        try {
+                            if (result.getCode() == 200) {//检查是否掉接口成功了
+                                T data = result.getData();
+                                return createData(data);//成功，剥取我们要的数据，把BaseModel丢掉
+                            } else {
+                                return Observable.error(new MsgException(result.getMessage()));//出错就返回服务器错误
+                            }
+                        } catch (Exception e) {//数据格式错误
+                            e.printStackTrace();
+                            return Observable.error(new MsgException("出现错误"));
                         }
                     }
                 }).subscribeOn(Schedulers.io())
