@@ -17,6 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activity.RecyclerViewActivity">
+        </activity>
+        <activity android:name=".ui.activity.AnimationActivity">
+        </activity>
+        <activity android:name=".ui.activity.FlexBoxActivity">
+        </activity>
     </application>
 
 </manifest>
