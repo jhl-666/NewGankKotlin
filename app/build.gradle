@@ -17,6 +17,14 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    splits {//真机可以安装apk，模拟器不能安装 res = -113
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'x86_64'
+            universalApk true
+        }
+    }
     packagingOptions {//防止多个so 去重
         pickFirst 'lib/armeabi-v7a/liblbs.so'
     }
